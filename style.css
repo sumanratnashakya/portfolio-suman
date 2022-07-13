@@ -18,6 +18,33 @@ html{
 }
 
 
+/*  */
+
+.social{
+    position: fixed;
+    top: 40%;
+    right: 1%;
+    opacity: 0;
+}
+
+.social.show{
+   opacity: 1;
+}
+
+.iconed{
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid green; */
+    margin-bottom: 3px;
+}
+
+.iconed i{
+    font-size: 35px;
+    color: crimson;
+}
+
+/*  */
+
 
 /* all similar content codes  */
 
@@ -77,6 +104,7 @@ footer {
 }
 
 /* all similar content codes ends */
+
 
 
 /* navbar styling */
@@ -176,16 +204,60 @@ footer {
     font-size: 25px;
 } */
 
+/* loader intro section starts */
+
+.intro{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text{
+    color: rgb(227, 242, 255);
+    font-family: 'ubuntu', 'sans-serif';
+    font-size: 3rem;
+}
+
+.slider{
+    background-color: rgb(55, 62, 65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    transform: translateY(100%);
+}
+
+.hide{
+    background: #000;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/* loader intro section ends */
+
 /* home section starts */
 
 .home {
     display: flex;
     background: url('image/bg3.webp') no-repeat center;
-    height: 105vh;
+    height: 115vh;
     color: #fff;
-    min-height: 110vh;
+    /* min-height: 110vh; */
     font-family: 'ubuntu', 'san-serif';
-    clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 0%);
+    /* clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%); */
 }
 
 .home .max-width {
@@ -239,7 +311,8 @@ footer {
 
 .about{
     background: url('image/bg4.jpeg') no-repeat center;
-    margin-top: -200px;
+    margin-top: -91px;
+    height: 100vh;
 }
 
 
@@ -308,6 +381,7 @@ footer {
 .project {
     background: #111;
     color: #fff;
+    height: 100vh;
 }
 
 .services .title::before,
@@ -364,6 +438,10 @@ footer {
 
 
 /* skills section  starts */
+
+.skills{
+    height: 100vh;
+}
 
 .skills .title::after {
     content: 'What i know';
@@ -518,7 +596,7 @@ footer {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    color: #fff;
+    color: white;
 }
 
 .project .carousel .card img {
