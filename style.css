@@ -18,6 +18,9 @@ html{
 }
 
 
+
+
+
 /*  */
 
 .social{
@@ -752,6 +755,7 @@ footer {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 28px;
 }
 
 .contact .right form .button button:hover{
