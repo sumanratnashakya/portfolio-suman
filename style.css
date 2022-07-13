@@ -38,12 +38,25 @@ html{
     width: 40px;
     height: 40px;
     /* border: 2px solid green; */
-    margin-bottom: 3px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    
 }
 
 .iconed i{
-    font-size: 35px;
+    font-size: 45px;
     color: crimson;
+}
+
+.iconed:hover{
+    transform: scale(1.5);
+}
+
+.social .linkedin i{
+    color: #0072b1;
+}
+.social .github i{
+    color: #566573;
 }
 
 /*  */
