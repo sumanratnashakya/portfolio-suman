@@ -960,6 +960,9 @@ footer span a:hover{
 
     /* services section */
 
+    .services{
+        height: 140vh;
+    }
     .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -984,7 +987,9 @@ footer span a:hover{
 
 @media (max-width: 750px) {
     /* services section */
-
+    .services{
+        height: 155vh;
+    }
     .services .serv-content .card {
         width: 100%;
     }
@@ -1041,10 +1046,20 @@ footer span a:hover{
         font-size: 16px;
         padding: 6px 16px;
     }
+
+    .services{
+        height: 161vh;
+    }
 }
 
 @media(max-width: 530px){
     .about{
         height: 150vh;
+    }
+}
+
+@media(max-width: 483px){
+    .services{
+        height: 200vh;
     }
 }
