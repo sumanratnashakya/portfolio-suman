@@ -69,8 +69,12 @@ $(document).ready(function(){
                 item: 2,
                 nav: false
             },
+            800:{
+                item: 2,
+                nav: false
+            },
             1000:{
-                items: 3,
+                items: 2,
                 nav: false
             }
         }

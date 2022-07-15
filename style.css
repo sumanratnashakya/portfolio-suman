@@ -105,7 +105,8 @@ section .title::after {
 .skills,
 .project,
 .contact,
-footer {
+footer,
+.slide-container {
     font-family: 'Poppins', 'sans-serif';
 }
 
@@ -564,48 +565,20 @@ footer {
 
 /* project section start */
 
+
+
 .project .title::after {
     content: 'What I designed';
 }
 
-.project .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
+.project .carousel .pro-card {
     height: 315px;
-    position: relative;
-}
-
-.project .carousel .card:hover {
-    transform: scale(1.05);
-}
-
-
-
-.project .carousel .card .tag{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background: green;
-    border-radius: 6px;
-    padding: 2px 14px;
-    font-size: 12px;
-}
-
-.project .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     transition: all 0.3s ease;
-    
 }
 
-.project .carousel .card:hover .box {
-    transform: scale(1.05);
+.project .carousel .pro-card:hover {
+    transform: scale(95%);
+    transition: all 0.3s ease;
 }
 
 .project .carousel .card .text {
@@ -623,9 +596,85 @@ footer {
     height: 240px;
 }
 
+.owl-carousel .owl-item img{
+    border-radius: 0 65px 0 65px;
+    border: 1px solid #fff;
+}
+
+
+
 .project .carousel .card:hover img {
     border-color: #fff;
 }
+
+
+
+.project .card-image{
+    position: relative;
+}
+
+.project .card-content{
+    display: none;
+}
+
+.pro-card:hover .card-content{
+    display: block;
+    position: absolute;
+    background-color: rgba(8, 7, 7, 0.497);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 18%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+ .card-content:hover .card-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+}
+
+.project h2{
+    font-size: 40px;
+    transform: translateY(-100%);
+}
+
+.card-content:hover h2{
+    transform: translateY(0%);
+    transition: all 0.3s ease;
+}
+
+
+
+.project .button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(500%);
+}
+
+.card-content:hover .button{
+    transform: translateY(0%);
+    transition: all 1s ease;
+}
+
+.project .button:hover{
+    background: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 
 .owl-dots {
     text-align: center;
@@ -653,6 +702,12 @@ footer {
 }
 
 /* project section ends */
+
+
+                                           
+
+
+
 
 
 /* contact section starts */
@@ -881,6 +936,9 @@ footer span a:hover{
     }
 
     /* about section */
+    .about{
+        height: 130vh;
+    }
     .max-width {
         max-width: 800px;
     }
@@ -897,6 +955,7 @@ footer span a:hover{
 
     .about .about-content .right {
         flex: 100%;
+        height: 100%;
     }
 
     /* services section */
@@ -981,5 +1040,11 @@ footer span a:hover{
     .home .home-content a {
         font-size: 16px;
         padding: 6px 16px;
+    }
+}
+
+@media(max-width: 530px){
+    .about{
+        height: 150vh;
     }
 }
